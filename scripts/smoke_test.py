@@ -29,3 +29,13 @@ if __name__ == "__main__":
         print("Smoke Test Failed.. ❌")
         print("Error:", e)
         sys.exit(1)
+
+
+if __name__ == "__main__":
+    try:
+        test_database()
+        print("Smoke Test Passed.. ✅")
+    except Exception as e:
+        print("Smoke Test Failed.. ❌")
+        print("Error:", e)
+        sys.exit(1)
